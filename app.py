@@ -17,10 +17,6 @@ client = MongoClient(MONGODB_URI)
 # db = client.fanpjr
 db = client[DB_NAME]
 
-connection_string = 'mongodb+srv://test:sparta@cluster0.roiwo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
-client = MongoClient(connection_string)
-db = client.dbsparta
-
 app = Flask(__name__)
 
 @app.route('/')
